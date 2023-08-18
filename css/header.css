@@ -1,0 +1,27 @@
+@import './navigation.css';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1.25rem;
+  background: var(--black);
+}
+
+.header-logo img {
+  inline-size: 5.75rem;
+  block-size: 1.25rem;
+  vertical-align: middle;
+}
+
+@media screen and (max-width:1023px) {
+  .header {
+    padding-block: 1.5rem;
+  }
+}
+
+@media screen and (max-width:655px) {
+  .header .button {
+    display: none;
+  }
+}

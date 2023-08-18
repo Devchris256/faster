@@ -1,0 +1,89 @@
+.checkout {
+  padding-block-start: 2.75rem;
+  padding-block-end: 2.75rem;
+}
+
+.checkout-content {
+  color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.checkout-sponsor {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.checkout-image {
+  inline-size: 100%;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.checkout-image img {
+  aspect-ratio: 16/9;
+  inline-size: 100%;
+  vertical-align: middle;
+}
+
+.checkout .description {
+  max-inline-size: 41.3125rem;
+}
+
+.checkout h2 {
+  color: var(--black);
+  font: var(--headline2);
+}
+
+@media screen and (max-width:1023px) {
+  .checkout {
+    padding-block-start: 2.75rem;
+    padding-block-end: 0;
+  }
+
+  .checkout-content {
+    color: var(--grey);
+    display: block;
+  }
+
+  .checkout-sponsor {
+    flex-direction: column;
+    margin-block-end: 4rem;
+  }
+
+  .checkout .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-inline-size: none;
+    padding-block: 3rem;
+    padding-inline: 1rem;
+    background-color: #E8E8E6;
+  }
+
+  .checkout .description::after {
+    content: '';
+    display: block;
+    inline-size: 16.5rem;
+    block-size: 31.25rem;
+    background-image: url(../img/iphone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .checkout-image {
+    border-radius: 0;
+    overflow: none;
+  }
+}
+
+@media screen and (max-width:655px) {
+  .checkout h2 {
+    font: var(--headline5);
+  }
+}

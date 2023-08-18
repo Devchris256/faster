@@ -1,0 +1,33 @@
+.redes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-block-start: 1.5rem;
+}
+
+.redes a {
+  display: flex;
+  inline-size: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  background: var(--white);
+  text-decoration: none;
+  border-radius: 50%;
+  text-align: center;
+  outline: none;
+  border: .0625rem solid transparent;
+}
+
+.redes img {
+  inline-size: 50%;
+  aspect-ratio: 1/1;
+  vertical-align: middle;
+}
+
+/* -----states---- */
+
+.redes a:hover,
+.redes a:focus {
+  border: .0625rem solid var(--white);
+}

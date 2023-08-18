@@ -1,0 +1,47 @@
+.purchases {
+  background: url(../img/plant.png) no-repeat right bottom/30%;
+  background-color: rgb(227, 227, 227);
+  display: flex;
+  align-items: center;
+}
+
+.purchases .description {
+  max-inline-size: 28.625rem;
+}
+
+.purchases h2 {
+  font: var(--headline2);
+  color: var(--black);
+}
+
+@media screen and (max-width:1023px) {
+  .purchases {
+    align-items: flex-start;
+    padding-inline: 1rem;
+    padding-block: 4rem;
+  }
+
+  .purchases .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-inline-size: none;
+  }
+
+  .purchases .description::after {
+    content: '';
+    display: block;
+    inline-size: 16.5rem;
+    block-size: 31.25rem;
+    background-image: url(../img/iphone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width:655px) {
+  .purchases h2 {
+    font: var(--headline5);
+  }
+}

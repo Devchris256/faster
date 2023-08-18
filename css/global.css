@@ -1,0 +1,51 @@
+:root {
+  font-size: 16px;
+  --phoneSize: 25rem;
+  --contentSize: 50rem;
+  --gridTemplateColumns: 1fr var(--phoneSize) var(--contentSize) 1fr;
+  --fontFamily: 'Inter', sans-serif;
+  --primary: #fed941;
+  --white: #ffffff;
+  --grey: #808080;
+  --black: #000000;
+  --headline3: 800 2.875rem/3.5rem var(--fontFamily);
+  --headline2: 700 3rem/3.625rem var(--fontFamily);
+  --headline4: 700 1.75rem/normal var(--fontFamily);
+  --headline5: 700 1.5625rem/normal var(--fontFamily);
+  --button: 700 1.125rem/1.75rem var(--fontFamily);
+  --caption: 400 0.75rem/1.375rem var(--fontFamily);
+  --body1-regular: 400 1.125rem/1.6875rem var(--fontFamily);
+  --body1-bold: 700 1.125rem/1.6875rem var(--fontFamily);
+  --body2-regular: 400 1rem/1.375rem var(--fontFamily);
+  --body2-bold: 700 1rem/1.1875rem var(--fontFamily);
+}
+
+body {
+  font: var(--body1-regular);
+  margin: 0;
+  color: var(--grey);
+}
+
+@media screen and (min-width: 1920px) {
+  :root {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  :root {
+    --phoneSize: 18.75rem;
+    --contentSize: 42rem;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  :root {
+    --phoneSize: 16.5rem;
+  }
+
+  body {
+    font: var(--body2-regular);
+  }
+
+}

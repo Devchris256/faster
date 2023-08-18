@@ -1,0 +1,18 @@
+.phone {
+  grid-area: phone;
+  position: sticky;
+  inset-block-start: 7.75rem;
+}
+
+.phone img {
+  inline-size: var(--phoneSize);
+  aspect-ratio: 9/16;
+}
+
+@media screen and (max-width:1023px) {
+  .phone {
+    position: static;
+    margin-block-start: -22.1875rem;
+    text-align: center;
+  }
+}

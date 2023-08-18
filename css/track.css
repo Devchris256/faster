@@ -1,0 +1,75 @@
+.track {
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3.75rem;
+}
+
+.track-content {
+  color: var(--white);
+  align-self: flex-end;
+}
+
+.track .description {
+  max-inline-size: 28.625rem;
+}
+
+.track h2 {
+  font: var(--headline2);
+  color: var(--white);
+}
+
+.track-line {
+  block-size: 2.5rem;
+  background: #E8E8E8;
+  grid-column: 3 / -1;
+  border-radius: 6.25rem 0 0 6.25rem;
+}
+
+.track-line::before {
+  content: '';
+  display: block;
+  block-size: 100%;
+  inline-size: 75%;
+  background: #2FB464;
+  border-radius: 6.25rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .track {
+    padding-block: 4rem;
+  }
+
+  .track-content .description {
+    padding-inline: 1rem;
+    margin-block-end: 2.5rem;
+  }
+
+  .track::after {
+    content: '';
+    display: block;
+    margin: auto;
+    inline-size: 16.5rem;
+    block-size: 31.25rem;
+    background-image: url(../img/iphone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .track .description {
+    max-inline-size: none;
+  }
+
+  .track-line {
+    margin-inline-start: 1rem;
+    margin-block-end: 4rem;
+  }
+}
+
+@media screen and (max-width:655px) {
+  .track h2 {
+    font: var(--headline5);
+  }
+}

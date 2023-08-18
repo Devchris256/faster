@@ -1,0 +1,41 @@
+.footer {
+  background: var(--black);
+  display: flex;
+  gap: 8rem;
+  padding-inline: 4rem;
+  padding-block: 5.4375rem;
+}
+
+.footer-faster {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-faster span {
+  font: var(--caption);
+}
+
+.footer-nav img {
+  inline-size: 6.125rem;
+  block-size: 1.25rem;
+  vertical-align: middle;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+.footer-nav li:nth-of-type(1) {
+  color: var(--white);
+}
+
+@media screen and (max-width: 655px) {
+  .footer {
+    flex-direction: column;
+    padding-inline: 1rem;
+    gap: 4rem;
+  }
+}

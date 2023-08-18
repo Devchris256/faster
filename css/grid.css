@@ -1,0 +1,37 @@
+@import './hero.css';
+@import './checkout.css';
+@import './purchases.css';
+@import './track.css';
+@import './login.css';
+@import './phone.css';
+
+.grid {
+  display: grid;
+  grid-template-columns: var(--gridTemplateColumns);
+  grid-template-areas: 'wrapper-start phone content wrapper-end';
+  position: relative;
+}
+
+.grid .inset-grid {
+  grid-column: 1/ -1;
+  display: grid;
+  grid-template-columns: var(--gridTemplateColumns);
+  grid-template-areas: '. . content .';
+  min-block-size: 48.4375rem;
+}
+
+.inset-grid [class*="content"] {
+  grid-area: content;
+  padding-inline-start: 1rem;
+}
+
+@media screen and (max-width:1023px) {
+  .grid,
+  .grid .inset-grid {
+    display: block;
+    min-block-size: 0;
+  }
+  .inset-grid [class*="content"] {
+    padding-inline-start: 0;
+  }
+}

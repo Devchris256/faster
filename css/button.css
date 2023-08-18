@@ -1,0 +1,45 @@
+.button {
+  font: var(--button);
+  color: var(--white);
+  background: transparent;
+  border-color: transparent;
+  padding-block: .75rem;
+  padding-inline: 3.8125rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: scale .2s;
+  outline: none;
+}
+
+.button.is-black {
+  background: var(--black);
+}
+
+.button.is-white {
+  border: .125rem solid var(--white);
+}
+
+.button.is-small {
+  background: var(--white);
+  color: var(--black);
+  padding-inline: 1rem;
+  padding-block: .25rem;
+}
+
+/* -----states----- */
+
+.button:active {
+  scale: .8;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: 0 .125rem .625rem .125rem rgba(214, 212, 212, 0.587) ;
+}
+
+.button.is-black:hover,
+.button.is-black:focus {
+  box-shadow: 0 .125rem .625rem .125rem rgba(139, 134, 134, 0.587) ;
+}
+
+
