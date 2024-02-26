@@ -1,0 +1,35 @@
+.button {
+  background: transparent;
+  font: var(--button);
+  padding-inline: 1rem;
+  padding-block: 0.25rem;
+  border: 1px solid transparent;
+  color: var(--white);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  transition: scale 0.3s;
+}
+
+.button-primary {
+  background: var(--white);
+  color: var(--black);
+}
+
+.button-secondary {
+  border-color: var(--white);
+  padding-inline: 3.875rem;
+  padding-block: 0.75;
+}
+
+.button-terceary {
+  inline-size: 100%;
+  max-inline-size: 18.75rem;
+  background: var(--black);
+  padding-block: 0.75rem;
+}
+
+.button:hover,
+.button:focus {
+  scale: 0.9;
+}

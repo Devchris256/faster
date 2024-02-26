@@ -1,0 +1,9 @@
+.insetGrid {
+  grid-column: 1/ -1;
+  grid-template-columns: var(--templateColumns);
+  grid-template-areas: ". phone content .";
+}
+
+.insetGrid-content {
+  grid-area: content;
+}
