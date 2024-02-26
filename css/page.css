@@ -1,7 +1,7 @@
 @import "./inset-grid.css";
 
 :root {
-  --maxinlinesizePhone: 25rem;
+  --maxinlinesizePhone: 22rem;
   --templateColumns: 1fr var(--maxinlinesizePhone) 600px 1fr;
 }
 

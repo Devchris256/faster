@@ -1,9 +1,12 @@
-.insetGrid {
-  grid-column: 1/ -1;
-  grid-template-columns: var(--templateColumns);
-  grid-template-areas: ". phone content .";
-}
+@media screen and (min-width: 1024px) {
+  .insetGrid {
+    grid-column: 1/ -1;
+    display: grid;
+    grid-template-columns: var(--templateColumns);
+    grid-template-areas: ". phone contenido .";
+  }
 
-.insetGrid-content {
-  grid-area: content;
+  .insetGrid-content {
+    grid-area: contenido;
+  }
 }

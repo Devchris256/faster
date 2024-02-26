@@ -2,18 +2,20 @@
 @import "./header.css";
 @import "./page.css";
 @import "./phone.css";
+@import "./hero.css";
 
 :root {
   font-size: 16px;
   user-select: none;
   scroll-behavior: smooth;
+  --blocksizePhone: 31.25rem;
   --primary: #fed941;
   --white: #ffffff;
   --grey: #808080;
   --black: #000000;
   --fontFamily: "Inter", sans-serif;
   --headline1: 700 1.75rem / normal var(--fontFamily);
-  --headline1-big: extra bold 2.875rem/3.5rem var(--fontFamily);
+  --headline1-big: 900 2.875rem/3.5rem var(--fontFamily);
   --headline2: 700 3rem/3.625rem var(--fontFamily);
   --headline2-big: 700 1.5625rem / normal var(--fontFamily);
   --button: 700 1.125rem/1.75rem var(--fontFamily);
@@ -25,8 +27,15 @@
 }
 
 body {
-  font: var(--body1-regular);
+  font: var(--body2-regular);
   margin: 0;
+  color: var(--grey);
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font: var(--body1-regular);
+  }
 }
 
 h1 {

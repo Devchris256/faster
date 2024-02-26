@@ -1,0 +1,46 @@
+.hero {
+  background: url(../img/background.jpg) no-repeat center/cover;
+  padding-inline: 1.5rem;
+  padding-block-start: 2rem;
+  padding-block-end: calc(var(--blocksizePhone) / 2 + 2rem);
+  grid-row: 1;
+}
+
+.hero-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-title {
+  color: var(--white);
+  margin: 0;
+}
+
+.hero-text {
+  margin: 0;
+}
+
+.hero-link {
+  color: var(--grey);
+  font: var(--body2-regular);
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    block-size: 35rem;
+    padding: 0;
+  }
+
+  .hero-content {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    block-size: 51rem;
+  }
+}

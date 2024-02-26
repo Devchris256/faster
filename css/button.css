@@ -19,7 +19,7 @@
 .button-secondary {
   border-color: var(--white);
   padding-inline: 3.875rem;
-  padding-block: 0.75;
+  padding-block: 0.75rem;
 }
 
 .button-terceary {
