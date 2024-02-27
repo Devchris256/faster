@@ -7,6 +7,9 @@
 @import "./fast.css";
 @import "./sellers.css";
 @import "./store.css";
+@import "./doc.css";
+@import "./feedback.css";
+@import "./help.css";
 
 :root {
   font-size: 16px;

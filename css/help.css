@@ -1,0 +1,21 @@
+.help {
+  background: #eceef1;
+  padding-block: 4rem;
+}
+
+.help-title {
+  color: var(--black);
+  text-align: center;
+  margin: 0;
+  margin-block-end: 5rem;
+}
+
+.help-content {
+  padding-inline: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .help {
+    padding-block-start: 6.25rem;
+  }
+}

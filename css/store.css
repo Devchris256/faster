@@ -6,6 +6,19 @@
 .store-description {
   padding-inline: 1.5rem;
   margin-block-end: 2.5rem;
+  position: relative;
+}
+
+.store-description::after {
+  content: " ";
+  display: block;
+  block-size: var(--blocksizePhone);
+  inline-size: auto;
+  margin-block-start: 4rem;
+  background: url(../img/iphone.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .store-title {
@@ -19,7 +32,7 @@
   border-radius: 6.25rem 0 0 6.25rem;
 }
 
-.store-line::before {
+.store-line::after {
   content: " ";
   display: block;
   inline-size: 65%;
@@ -40,6 +53,10 @@
 
   .store-description {
     max-inline-size: 28.625rem;
+  }
+
+  .store-description::after {
+    content: none;
   }
 
   .store-line {

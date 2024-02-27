@@ -1,0 +1,50 @@
+.doc {
+  padding-block: 2rem;
+}
+
+.doc-description {
+  padding-inline: 1.5rem;
+}
+
+.doc-title {
+  color: var(--black);
+}
+
+.doc-img {
+  inline-size: 16.875rem;
+  block-size: 16.875rem;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-block-start: 3.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .doc {
+    block-size: 53.125rem;
+  }
+
+  .doc-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .doc-description {
+    max-inline-size: 27.875rem;
+  }
+
+  .doc-img {
+    margin-block-start: 0;
+    margin-inline: 0;
+    margin-block-end: 3.5rem;
+    inline-size: 20rem;
+    block-size: 20rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .doc {
+    block-size: 66rem;
+  }
+}
