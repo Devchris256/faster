@@ -6,6 +6,7 @@
 @import "./hero.css";
 @import "./fast.css";
 @import "./sellers.css";
+@import "./store.css";
 
 :root {
   font-size: 16px;
@@ -17,6 +18,7 @@
   --grey20: #808080;
   --grey10: #e8e8e6;
   --black: #000000;
+  --green: #2fb464;
   --fontFamily: "Inter", sans-serif;
   --headline1: 700 1.75rem / normal var(--fontFamily);
   --headline1-big: 900 2.875rem/3.5rem var(--fontFamily);
