@@ -1,0 +1,56 @@
+.sellers {
+  padding-block-start: 2rem;
+  padding-block-end: 3rem;
+  background: url(../img/plant.png) no-repeat bottom right/cover;
+}
+
+.sellers-description {
+  padding-inline: 1.5rem;
+}
+
+.sellers-description::after {
+  content: " ";
+  display: block;
+  block-size: var(--blocksizePhone);
+  inline-size: auto;
+  margin-block-start: 4rem;
+  background: url(../img/iphone.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.sellers-title {
+  color: var(--black);
+}
+
+@media screen and (min-width: 1024px) {
+  .sellers {
+    block-size: 28.125rem;
+  }
+
+  .sellers-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .sellers-description {
+    max-inline-size: 28.4375rem;
+  }
+
+  .sellers .sellers-description::after {
+    content: none;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .sellers {
+    block-size: 40.625rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sellers {
+    block-size: 48.4375rem;
+  }
+}
