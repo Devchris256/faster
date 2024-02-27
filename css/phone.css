@@ -1,5 +1,6 @@
 .phone {
   margin-block-start: calc(var(--blocksizePhone) / 2 * -1);
+  text-align: center;
 }
 
 .phone-img {
@@ -10,8 +11,11 @@
 @media screen and (min-width: 1024px) {
   .phone {
     margin-block-start: 0;
-    grid-area: phone;
-    z-index: 1;
+    grid-area: iphone;
+    position: sticky;
+    inset-block-start: 50px;
+    z-index: 3;
+    margin-block-start: 127px;
   }
 
   .phone-img {

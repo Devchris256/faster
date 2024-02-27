@@ -1,14 +1,29 @@
 @import "./inset-grid.css";
 
 :root {
-  --maxinlinesizePhone: 22rem;
-  --templateColumns: 1fr var(--maxinlinesizePhone) 600px 1fr;
+  --maxinlinesizePhone: 25rem;
+  --inlinesizeContent: 37.5rem;
+  --templateColumns: 1fr var(--maxinlinesizePhone) var(--inlinesizeContent) 1fr;
 }
 
 @media screen and (min-width: 1024px) {
   .page {
     display: grid;
-    grid-template-columns: 1fr var(--maxinlinesizePhone) 600px 1fr;
-    grid-template-areas: ". phone . .";
+    grid-template-columns: var(--templateColumns);
+    /* grid-template-rows: minmax(560px, max-content); */
+    grid-template-areas: ". iphone . .";
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --inlinesizeContent: 50rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    --inlinesizeContent: 62.5rem;
   }
 }
