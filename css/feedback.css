@@ -2,18 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 80px;
+  gap: 5rem;
 }
 
 .feedback-feed {
   background: var(--white);
   border-radius: 0.5rem;
-  padding-block-start: 128px;
-  padding-inline: 32px;
-  padding-block-end: 32px;
+  padding-block-start: 8rem;
+  padding-inline: 2rem;
+  padding-block-end: 2rem;
   box-shadow: 0px 4px 44px rgb(0, 0, 0, 0.1);
   position: relative;
-  max-inline-size: 426px;
+  max-inline-size: 26.625rem;
 }
 
 .feedback-img {
@@ -60,11 +60,11 @@
     align-items: flex-end;
     gap: 1.5rem;
     overflow-y: auto;
-    block-size: 490px;
+    block-size: 31.875rem;
   }
 
   .feedback-feed {
     flex-shrink: 0;
-    inline-size: 426px;
+    inline-size: 26.625rem;
   }
 }

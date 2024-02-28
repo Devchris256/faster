@@ -10,6 +10,8 @@
 @import "./doc.css";
 @import "./feedback.css";
 @import "./help.css";
+@import "./sign-up.css";
+@import "./footer.css";
 
 :root {
   font-size: 16px;
@@ -18,6 +20,7 @@
   --blocksizePhone: 31.25rem;
   --primary: #fed941;
   --white: #ffffff;
+  --greylight: #eceef1;
   --grey20: #808080;
   --grey10: #e8e8e6;
   --black: #000000;
@@ -41,11 +44,25 @@ body {
   color: var(--grey20);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 500px) {
   body {
     font: var(--body1-regular);
   }
 }
+
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+/* h1 */
 
 h1 {
   font: var(--headline1);
@@ -57,8 +74,16 @@ h1 {
   }
 }
 
+/* h2 */
+
 h2 {
   font: var(--headline2);
+}
+
+@media screen and (min-width: 500px) {
+  h2 {
+    font-size: 2.1875rem;
+  }
 }
 
 @media screen and (min-width: 768px) {

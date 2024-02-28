@@ -1,6 +1,17 @@
 .sellers {
   padding-block-start: 2rem;
   padding-block-end: 3rem;
+}
+
+.webp .sellers {
+  background: url(../img/plant.webp) no-repeat bottom right/cover;
+}
+
+.avif .sellers {
+  background: url(../img/plant.avif) no-repeat bottom right/cover;
+}
+
+.notavif.notwebp .sellers {
   background: url(../img/plant.png) no-repeat bottom right/cover;
 }
 
@@ -14,9 +25,24 @@
   block-size: var(--blocksizePhone);
   inline-size: auto;
   margin-block-start: 4rem;
-  background: url(../img/iphone.png);
-  background-repeat: no-repeat;
   background-size: contain;
+}
+
+.webp .sellers-description::after {
+  background: url(../img/iphone-small.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.avif .sellers-description::after {
+  background: url(../img/iphone-small.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.notavif.notwebp .sellers-description::after {
+  background: url(../img/iphone-small.png);
+  background-repeat: no-repeat;
   background-position: center;
 }
 

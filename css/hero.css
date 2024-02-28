@@ -1,5 +1,16 @@
-.hero {
+.webp .hero {
+  background: url(../img/background.webp) no-repeat center/cover;
+}
+
+.avif .hero {
+  background: url(../img/background.avif) no-repeat center/cover;
+}
+
+.notavif.notwebp .hero {
   background: url(../img/background.jpg) no-repeat center/cover;
+}
+
+.hero {
   padding-inline: 1.5rem;
   padding-block-start: 2rem;
   padding-block-end: calc(var(--blocksizePhone) / 2 + 2rem);

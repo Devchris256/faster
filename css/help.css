@@ -1,5 +1,5 @@
 .help {
-  background: #eceef1;
+  background: var(--greylight);
   padding-block: 4rem;
 }
 

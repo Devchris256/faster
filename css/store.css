@@ -15,9 +15,24 @@
   block-size: var(--blocksizePhone);
   inline-size: auto;
   margin-block-start: 4rem;
-  background: url(../img/iphone.png);
-  background-repeat: no-repeat;
   background-size: contain;
+}
+
+.webp .store-description::after {
+  background: url(../img/iphone-small.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.avif .store-description::after {
+  background: url(../img/iphone-small.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.notavif.notwebp .store-description::after {
+  background: url(../img/iphone-small.png);
+  background-repeat: no-repeat;
   background-position: center;
 }
 

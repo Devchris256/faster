@@ -14,9 +14,24 @@
   block-size: var(--blocksizePhone);
   inline-size: auto;
   margin-block-start: 4rem;
-  background: url(../img/iphone.png);
+  background-position: center;
+}
+
+.webp .fast-description::after {
+  background: url(../img/iphone-small.webp);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+}
+
+.avif .fast-description::after {
+  background: url(../img/iphone-small.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.notavif.notwebp .fast-description::after {
+  background: url(../img/iphone-small.png);
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -38,6 +53,8 @@
 
   .fast-img {
     margin-block-start: 5rem;
+    border-radius: 1rem;
+    overflow: hidden;
   }
 
   .fast-description {

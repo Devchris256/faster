@@ -10,7 +10,7 @@
   .page {
     display: grid;
     grid-template-columns: var(--templateColumns);
-    /* grid-template-rows: minmax(560px, max-content); */
+    grid-template-rows: 35rem;
     grid-template-areas: ". iphone . .";
     position: relative;
   }
@@ -25,5 +25,9 @@
 @media screen and (min-width: 1440px) {
   :root {
     --inlinesizeContent: 62.5rem;
+  }
+
+  .page {
+    grid-template-rows: 51rem;
   }
 }

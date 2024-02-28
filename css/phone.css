@@ -12,14 +12,13 @@
   .phone {
     margin-block-start: 0;
     grid-area: iphone;
+    aspect-ratio: 9/16;
     position: sticky;
-    inset-block-start: 50px;
-    z-index: 3;
-    margin-block-start: 127px;
+    inset-block-start: 250px;
+    /* border: 10px solid blue; */
   }
 
   .phone-img {
-    max-inline-size: none;
     inline-size: 100%;
     block-size: auto;
   }
